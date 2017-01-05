@@ -22,7 +22,7 @@ H: firstline first char
 O: insert a new line above and insert mode
 ^[: escape
 ```
-function AddHelloTop
+function! AddHelloTop
   normal HOhello there^[A vim user^[0
   s/hello there/hi/
   return "message"
@@ -30,7 +30,7 @@ endfunction
 ```
 call a function
 ```
-command Hello call AddHelloTop
+command! Hello call AddHelloTop
 ```
 
 
