@@ -15,6 +15,29 @@ vaW // visulize word including whitespace
 
 
 
+
+##4. More Vimscript
+###1 Functions
+H: firstline first char
+O: insert a new line above and insert mode
+^[: escape
+```
+function AddHelloTop
+  normal HOhello there^[A vim user^[0
+  s/hello there/hi/
+  return "message"
+endfunction
+```
+call a function
+```
+command Hello call AddHelloTop
+```
+
+
+
+
+
+
 ##5. Plugins
 ###1 Adding Support for Other Languages
 ```
