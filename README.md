@@ -34,7 +34,8 @@ command! Hello call AddHelloTop
 ```
 
 
-
+###2 Autocompleting in Vim
+ctrl p(previous) OR ctrl n(next)
 
 
 
